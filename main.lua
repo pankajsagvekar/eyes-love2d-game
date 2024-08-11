@@ -29,7 +29,7 @@ function love.draw()
 
     --pupil
     love.graphics.setColor(0, 0, 0)
-    love.graphics.circle("fill", 200, 200, 15)
+    love.graphics.circle("fill", pupilX, pupilY, 15)
 
     --distance
     love.graphics.setColor(0, 0, 0)
