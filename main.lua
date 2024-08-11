@@ -7,8 +7,6 @@ function love.update()
     if love.keyboard.isDown('escape') then
         love.event.quit()
     end
-
-
 end
 
 function love.draw()
@@ -45,6 +43,6 @@ function love.draw()
         -- }, '\n'))
     end
    
-    drawEye(200+100, 200)
-    drawEye(330+100, 200)
+    drawEye(200, 200)
+    drawEye(330, 200)
 end
