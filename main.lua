@@ -11,7 +11,7 @@ function love.update()
     distanceX = love.mouse.getX() - eyeX
     distanceY = love.mouse.getY() - eyeY
     angle = math.atan2(distanceY, distanceX)
-    distance = math.sqrt(distanceX^2 + distanceY^2)
+    distance = math.min(math.sqrt(distanceX^2 + distanceY^2), 30)
     pupilX = eyeX + (math.cos(angle) * distance)
     pupilY = eyeY + (math.sin(angle) * distance)
 end
