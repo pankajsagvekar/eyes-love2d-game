@@ -10,6 +10,7 @@ function love.update()
 
     distanceX = love.mouse.getX() - eyeX
     distanceY = love.mouse.getY() - eyeY
+    angle = math.atan2(distanceY, distanceX)
 end
 
 function love.draw()
@@ -32,5 +33,6 @@ function love.draw()
     love.graphics.print(table.concat({
         'distance X: ' .. distanceX,
         'distance Y: ' .. distanceY,
+        'angle: '..angle,
     }, '\n'))
 end
